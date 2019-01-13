@@ -1,5 +1,5 @@
 function imc(){
-    var altura = document.getElementById("altura").value
+    var altura = document.getElementById("altura").value;
     altura = parseFloat(altura.replace(',', '.'));
     
     var peso = document.getElementById("peso").value;
