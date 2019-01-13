@@ -1,0 +1,61 @@
+body{
+    font-family: sans-serif;
+}
+
+#calcularIMC{
+    width: 400px;
+    background-image: linear-gradient(to top right, rgb(235, 235, 235), rgb(247, 244, 244));
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow:  0 0 10px rgba(0,0,0,.8);
+    margin: 15px auto;
+    display: grid;
+    grid-template-columns: repeat(4, fr);
+    grid-gap: 1em;
+    grid-template-rows: auto repeat(5, 40px);
+    }
+
+
+input{
+        padding: .25em;
+        grid-column: 1 / 2;
+    
+    }
+    
+input[type="textfield"]{
+    font-size: 1.4em;
+    background-image: linear-gradient(to top left, white, #ccc);
+    box-shadow: inset 3px 2px 0 white; 
+    padding: 10px;
+    text-align: left;
+    margin-bottom: 10px;
+    grid-column: 1 / -1;
+
+        }
+
+.calc{
+    
+    background: rgba(255, 0, 0, 0.8);
+    border-radius: 10px;
+    font-size: 1.5em;
+    color: white;
+    box-shadow:  0 0 20px rgba(177, 81, 81, 0.8);
+    width: 300px;
+    margin-left: 50px;
+  
+}
+
+#ans{
+    color : black;
+    font-size: 1em;
+}
+
+
+
+
+
+
+        
+
+
+

@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+    <head>
+        <title>IMC com HTML + CSS javascript</title>
+        <link href="estilo-IMC.css" rel="stylesheet">
+        <meta charset="utf-8">
+        <script src="calculoImc.js"></script>
+    </head>
+
+    <body>
+       
+            <form id="calcularIMC">
+ 
+                    <h3>Calcule seu IMC<hr></h3>
+                    
+                    <label for="altura">Altura em metros</label>
+                    <input placeholder= "altura" type="text" id="altura">
+                    <label for="nome">Peso em kilos</label>
+                    <input placeholder= "peso" type="text" id="peso">
+                    <input  type="textfield" id="ans" readonly>
+                    <button class = "calc" type="button" onclick="imc()">Calcular</button>
+                    
+
+            </form>
+
+    </body>
+
+</html>
