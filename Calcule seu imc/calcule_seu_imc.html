@@ -1,28 +1,40 @@
 <!doctype html>
 <html>
-    <head>
-        <title>IMC com HTML + CSS javascript</title>
-        <link href="estilo-IMC.css" rel="stylesheet">
-        <meta charset="utf-8">
-        <script src="calculoImc.js"></script>
-    </head>
 
-    <body>
-       
-            <form id="calcularIMC">
- 
-                    <h3>Calcule seu IMC<hr></h3>
-                    
-                    <label for="altura">Altura em metros</label>
-                    <input placeholder= "altura" type="text" id="altura">
-                    <label for="nome">Peso em kilos</label>
-                    <input placeholder= "peso" type="text" id="peso">
-                    <input  type="textfield" id="ans" readonly>
-                    <button class = "calc" type="button" onclick="imc()">Calcular</button>
-                    
+<head>
+    <title>IMC com HTML + CSS javascript</title>
+    <link href="css/estilo-IMC.css" rel="stylesheet">
+    <link href="css/new-button.css" rel="stylesheet">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//plentz.github.io/jquery-maskmoney/javascripts/jquery.maskMoney.min.js"></script>
+    <meta charset="utf-8">
+    <script>
+        $(function() {
+            $('#altura').maskMoney();
+            $('#peso').maskMoney();
+        });
+        </script>
 
-            </form>
+</head>
 
-    </body>
+<body>
+
+    <form id="calcularIMC">
+
+        <h3>Calcule seu IMC
+            <hr>
+        </h3>
+
+        <label for="altura">Altura em metros</label>
+        <input placeholder="altura" type="text" id="altura" data-thousands="" data-decimal="," required>
+        <label for="nome">Peso em kilos</label>
+        <input placeholder="peso" type="text" id="peso"  data-decimal="," required>
+        <input type="textfield" id="ans" readonly>
+        <button class="calc" type="button" onclick="imc()">Calcular</button>
+
+
+    </form>
+    <script src="js/calculoImc.js"></script>
+</body>
 
 </html>

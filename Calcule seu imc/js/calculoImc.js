@@ -1,5 +1,5 @@
 function imc(){
-    var altura = document.getElementById("altura").value;
+    altura = document.getElementById("altura").value;
     altura = parseFloat(altura.replace(',', '.'));
     
     var peso = document.getElementById("peso").value;
@@ -23,7 +23,10 @@ function resultado(indice){
         document.getElementById("ans").value = "seu IMC é: " + indiceStr + " Peso normal";
     }else if(indice > 17){
         document.getElementById("ans").value = "seu IMC é: " + indiceStr + " Abaixo do peso";
-    }else {
+    }else if(indice < 17){
         document.getElementById("ans").value = "seu IMC é: " + indiceStr + " Muito abaixo do peso";
+    }
+    else {
+        document.getElementById("ans").value = "preencha todos os campos!";
     }
 }
