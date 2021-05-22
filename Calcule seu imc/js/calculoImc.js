@@ -1,3 +1,17 @@
+
+var $peso = document.querySelector('#peso');
+$peso.addEventListener('keyup', function (e) {
+    if (e.keyCode === 13 && $altura != null) {
+        imc();
+    }
+});
+var $altura = document.querySelector('#altura');
+$altura.addEventListener('keyup', function (e) {
+    if (e.keyCode === 13 && $peso != null) {
+        imc();
+    }
+});
+
 function imc(){
     altura = document.getElementById("altura").value;
     altura = parseFloat(altura.replace(',', '.'));
